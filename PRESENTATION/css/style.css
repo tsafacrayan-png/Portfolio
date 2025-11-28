@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1f242d;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: #2a2392;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.home-info h1{
+    font-size: 55px;
+}
+
+.home-info p{
+    font-size: 32px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #2a2392;
+    border: 2px solid #2a2392;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #2a2392;
+    font-size: 16px;
+    color: #c3cad8;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #2a2392;
+    box-shadow: none;
+}
+
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a{
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid #2a2392;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #2a2392;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background-color: #2a2392;
+    color: #c3cad8;
+    box-shadow: 0 0 10px #2a2392;
+}
+
+.home-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    background: #2a2392;
+    border-radius: 50%;
+    padding: 5px;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+/*.home-img .img-box::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(transparent, transparent, transparent, #2a2392);
+}*/
+
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img{
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
